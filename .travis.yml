@@ -1,6 +1,7 @@
 language: generic
 
 sudo: required
+
 # tell Travis that we need a docker installed
 services:
   - docker
