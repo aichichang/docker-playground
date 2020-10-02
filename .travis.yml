@@ -1,0 +1,14 @@
+language: generic
+
+sudo: required
+# tell Travis that we need a docker installed
+services:
+  - docker
+# the project name after the docker id is the repo name from Github
+# but the tag name is convention anyway, it could be anything
+before_install:
+  # the reason we are using the Dockerfile.dev is that we have the test image set up inside this file
+  - docker build -t aichichangnandos/docker-playground -f Dockerfile.dev .
+
+script:
+  - docker run -e CI=true aichichangnandos/docker-playground npm run test
