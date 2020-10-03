@@ -27,5 +27,6 @@ deploy:
   on:
     branch: master
 
+  # We've set up our keys on Travis CI, so it's not exposed on Guithub
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: "$AWS_SECRET_KEY"
