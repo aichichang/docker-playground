@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Hej Hej!!?
+          New change for the nwe-feature branch
         </p>
         <a
           className="App-link"
